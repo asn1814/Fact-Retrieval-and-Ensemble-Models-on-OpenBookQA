@@ -1,1 +1,5 @@
 # Fact-Retrieval-and-Ensemble-Models-on-OpenBookQA
+
+We are investigating the OpenBookQA task benchmark originally proposed by the paper Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering. The dataset consists of 5,957 multiple-choice elementary-level science questions (4,957 train, 500 dev, 500 test), which probe the understanding of a small “book” of 1,326 core science facts and the application of these facts to novel situations.
+
+We benchmarked a variety of pre-trained and fine-tuned models on OpenBookQA. We found that these performed poorly on the benchmark, suggesting that specialized models are necessary. We then built and tested two distinct strategies on the benchmark that were shown to be effective on the leaderboard: fact-retrieval models and ensemble models. We found that fact-retrieval was incredibly successful, boosting accuracy on models of all sizes by 2 to 4 percent. Our implementation of ensemble was unsuccessful, lowering accuracy across the board by around 2 percent.
